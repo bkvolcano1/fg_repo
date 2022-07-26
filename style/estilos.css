@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto+Slab:wght@300;400&family=Roboto:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:ital@1&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    
+    
+}
+header:hover{
+    transform: scale(2);
+}
+
+header, h2{
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+}
+nav ul li{
+    font-family: 'Cairo', sans-serif;
+    list-style-type: none;
+
+}
+footer{
+    padding: 3em;
+    background-color:black;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+.ad{
+    grid-area: ad;
+}
+
+
+.galeria{
+    grid-area: galeria;
+
+}
+
+footer{
+    grid-area: footer;
+}
+.envoltura{
+    background-color: slategray;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "ad"
+    "galeria"
+    "footer";
+    gap: 20px;
+}
+
+.envolturagaleria{
+    background-color: slategray;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav";
+    gap: 20px;
+
+}
+.envolturacontacto{
+    background-color: slategray;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav";
+    gap: 20px;
+
+}
+.envolturahistoria{
+    background-color: slategray;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav";
+    gap: 20px;
+
+}
+.envolturaservicios{
+    background-color: slategray;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav";
+    gap: 20px;
+
+}
+
+.galeria{
+    background-color: rgb(167, 201, 230);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+.galeriafotos{
+    background-color: rgb(167, 201, 230);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+img{
+    border: 8px solid black;
+    width: 250px;
+    height: 200px;
+    margin-top: 15px;
+}
+iframe{
+    border: 8px solid black;
+    width: 250px;
+    height: 200px;
+    margin-top: 15px;
+
+}
+
+@media (min-width:500px){
+    .envoltura{
+        background-color: rgb(63, 99, 134);
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "contenido"
+        "ad"
+        "galeria"
+        "footer"; 
+
+    }
+    .envolturacontacto{
+        background-color: rgb(63, 99, 134);
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav";
+        
+    }
+    .envolturagaleria{
+        background-color: rgb(63, 99, 134);
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav";
+        gap: 20px;
+    
+    }
+
+    .envolturahistoria{
+        background-color: rgb(63, 99, 134);
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav";
+        
+    }
+    .envolturaservicios{
+        background-color: rgb(63, 99, 134);
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav";
+        
+    }
+
+    .galeria{
+        background-color: rgb(81, 87, 148);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    .galeriafotos{
+        background-color: rgb(81, 87, 148);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    img{
+        border: 8px solid black;
+        width: 350px;
+        height: 300px;
+        margin-top: 15px;
+    }
+    iframe{
+        border: 8px solid black;
+        width: 350px;
+        height: 300px;
+        margin-top: 15px;
+    
+    }
+    
+}
+
+
+@media (min-width:768px){
+    .envoltura{
+        background-color: rgb(18, 37, 56);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 9fr 1fr;
+        grid-template-areas:
+        "header header    header"
+        "nav    contenido      contenido"
+        
+        "ad     ad        ad"
+        "galeria galeria galeria"
+        "footer   footer     footer"; 
+
+    }
+    .envolturacontacto{
+        background-color:rgb(18, 37, 56) ;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 9fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav    nav nav";
+        gap: 20px;
+
+    }
+    .envolturagaleria{
+        background-color:rgb(18, 37, 56) ;
+        margin-bottom: 1.5em;
+        grid-template-areas: 
+        "header"
+        "nav";
+        gap: 20px;
+    
+    }
+    .envolturahistoria{
+        background-color:rgb(18, 37, 56) ;
+        margin-bottom: 1.5em;
+        grid-template-areas: 
+        "header"
+        "nav";
+        gap: 20px;
+    
+    }
+    .envolturaservicios{
+        background-color:rgb(18, 37, 56) ;
+        margin-bottom: 1.5em;
+        grid-template-areas: 
+        "header"
+        "nav";
+        gap: 20px;
+    
+    }
+    .galeria{
+        background-color: steelblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    .galeriafotos{
+        background-color: steelblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    img{
+        width: 400px;
+        height: 350px;
+    }
+    iframe{
+        width: 400px;
+        height: 350px;
+    }
+    footer{
+        margin-top: 3em;
+    }
+}
+
+@media (min-width:1024px){
+    .envoltura{
+        background-color: rgb(21, 49, 77);
+        
+       
+
+    }
+    .envolturacontacto{
+        background-color: rgb(21, 49, 77);
+        
+    }
+     .envolturagaleria{
+        background-color: rgb(21, 49, 77);
+        
+    }
+    .envolturahistoria{
+        background-color: rgb(21, 49, 77);
+        
+    }
+    .envolturaservicios{
+        background-color: rgb(21, 49, 77);
+        
+    }
+    .galeria{
+        background-color: rgba(86, 125, 158, 0.952);
+    }
+    .galeriafotos{
+        background-color: rgba(86, 125, 158, 0.952);
+
+    }
+    img{
+        width: 450px;
+        height: 400px;
+        margin-top: 18px;
+    }
+    iframe{
+        width: 450px;
+        height: 400px;
+        margin-top: 18px;
+    }
+
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
