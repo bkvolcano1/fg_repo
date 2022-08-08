@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto+Slab:wght@300;400&family=Roboto:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:ital@1&display=swap');
+
+.fondoNav{
+    background-color: rgb(33, 33, 199);
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+img{
+    height: 400px;
+}
+footer{
+    background-color: black;
+}
+
+.parrafohist{
+    font-family: 'Cairo', sans-serif;
+
+}
